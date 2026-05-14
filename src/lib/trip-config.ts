@@ -1,10 +1,10 @@
-import heroImg from "@/assets/hero-indonesia.jpg";
-import nusaLembonganImg from "@/assets/nusa-lembongan.jpg";
-import giliTImg from "@/assets/gili-t.jpg";
-import kutaLombokImg from "@/assets/kuta-lombok.jpg";
-import vibeBoatpartyImg from "@/assets/vibe-boatparty.jpg";
-import vibeMantarayImg from "@/assets/vibe-mantaray.jpg";
-import vibeAtvImg from "@/assets/vibe-atv.jpg";
+import heroImg from "@/assets/hero-vietnam.jpg";
+import hanoiImg from "@/assets/hanoi.jpg";
+import haGiangImg from "@/assets/ha-giang.jpg";
+import hoiAnImg from "@/assets/hoi-an.jpg";
+import vibeMotorbikeImg from "@/assets/vibe-motorbike.jpg";
+import vibeCookingImg from "@/assets/vibe-cooking.jpg";
+import vibeBanaHillsImg from "@/assets/vibe-banahills.jpg";
 import logoImg from "@/assets/mad-monkey-logo.png";
 
 export interface TripConfig {
@@ -12,8 +12,8 @@ export interface TripConfig {
     name: string;
     instagram: string;
     instagramUrl: string;
-    tiktok: string;
-    tiktokUrl: string;
+    tiktok?: string;
+    tiktokUrl?: string;
   };
   poweredBy: {
     name: string;
@@ -77,95 +77,78 @@ export interface TripConfig {
 
 export const tripConfig: TripConfig = {
   creator: {
-    name: "WILL GEE",
-    instagram: "@will.gee11",
-    instagramUrl: "https://instagram.com/will.gee11",
-    tiktok: "@willgeeeeee",
-    tiktokUrl: "https://tiktok.com/@willgeeeeee",
+    name: "TRAVELLING TOMOS",
+    instagram: "@travellingtomos",
+    instagramUrl: "https://instagram.com/travellingtomos",
   },
   poweredBy: {
     name: "Mad Monkey",
     logo: logoImg,
   },
   trip: {
-    title: "Indonesia Takeover",
+    title: "Vietnam Takeover",
     highlightColor: "red",
-    dates: "SEP 6 - 21",
-    durationDays: 15,
-    locationCount: 5,
-    locationLabel: "across Indonesia",
+    dates: "JUN 25 - JUL 4",
+    durationDays: 10,
+    locationCount: 3,
+    locationLabel: "across Vietnam",
     heroImage: heroImg,
   },
   stripeBookingUrl: "https://buy.stripe.com/00w6oGgqT4be3TW0CSe7s47",
   spots: {
-    total: 50,
-    remainingText: "ONLY 10 SPOTS LEFT!",
+    total: 12,
+    remainingText: "ONLY 12 SPOTS LEFT!",
   },
   pricing: {
     currency: "£",
     total: 700,
-    deposit: 233.1,
+    deposit: 70,
     instalments: [
-      { amount: 233.1, due: "23/08/2026" },
-      { amount: 233.1, due: "30/08/2026" },
+      { amount: 350, due: "04/06" },
+      { amount: 280, due: "18/06" },
     ],
-    depositDeadline: "09/08/2026",
+    depositDeadline: "28/05",
     minTravellers: 12,
   },
   locations: [
     {
-      name: "Uluwatu",
-      daysLabel: "Days 1-4",
-      duration: "4 Days (Sep 6-9)",
-      image: heroImg,
+      name: "Hanoi",
+      daysLabel: "Days 1-2",
+      duration: "2 Days (Jun 25-26)",
+      image: hanoiImg,
       description:
-        "Your adventure starts at Mad Monkey Uluwatu. Welcome sunsets, surf lessons, sunrise treks, and live DJ nights to set the tone.",
+        "Kick things off in the chaotic, lantern-lit streets of Hanoi before heading north for the adventure of a lifetime.",
       highlights: [
-        "Day 1 (06/09) — Arrive at DPS Airport. Transfer to Mad Monkey Uluwatu. Welcome Sunset (5PM-7:30PM) at Panorama Point",
-        "Day 2 (07/09) — Surf Lesson (9AM-11AM) + Fire Show",
-        "Day 3 (08/09) — Mt Batur Sunrise Trekking (1:30AM-11AM). Sauna, hot tub & ice baths",
-        "Day 4 (09/09) — Live DJ + Free Flow (8PM-11PM)",
+        "Day 1 (25/06) — Mon: Arrive in Mad Monkey Hanoi and check in.",
+        "Day 2 (26/06) — Tue: Leave Hanoi at 9:30AM for a 7-hour ride up north. Roll into Ha Giang with time to meet the crew, grab a cold beer by the pool, and enjoy local bites to warm up for the loop.",
       ],
     },
     {
-      name: "Nusa Lembongan",
-      daysLabel: "Days 5-6",
-      duration: "2 Days (Sep 10-11)",
-      image: nusaLembonganImg,
+      name: "Ha Giang Loop",
+      daysLabel: "Days 3-6",
+      duration: "4 Days (Jun 27-30)",
+      image: haGiangImg,
       description:
-        "Hop on a fast boat to the island paradise of Nusa Lembongan. Island hopping, pool parties, and turquoise waters.",
+        "The legendary Ha Giang Loop. Mountain passes, waterfalls, hidden villages, and unlimited beer hour every evening.",
       highlights: [
-        "Day 5 (10/09) — Taxi to Sanur, 30-min fast boat to Mad Monkey Nusa Lembongan. Ice baths, sauna, gym & luxury pool",
-        "Day 6 (11/09) — Island Hopping around Nusa Penida (8:30AM-5PM) + Mad Monkey Pool Party (6PM-10PM)",
+        "Day 3 (27/06) — Wed: 8:30AM ride to Pác Sum Pass. Trek and swim at Khau Làn Waterfall, lunch in Tam Son, scenic ride through Thai An. Coffee in Lüng Hö, then Du Già Valley pool & sunset. Local family dinner + happy water + 1hr unlimited beer.",
+        "Day 4 (28/06) — Thur: Backroads through Red Dao and Nung villages, bamboo raft ride at Ban An stream. Hit the iconic Ma Pi Leng Pass, climb for panoramic views, brave the Skywalk if you dare. Overnight nearby + 1hr unlimited beer.",
+        "Day 5 (29/06) — Fri: Head southeast toward the Vietnam–China border. Stop at Thien Huong village, hike up the Lung Cu Flag Pole. Lunch in Lolo Chai (H'mong clay village), visit the H'mong King's Palace, Tham Ma Pass, and Can Ty Pass. Dinner in Nam Dam village.",
+        "Day 6 (30/06) — Sat: 4km hike to Lung Khuy Cave (or nearby waterfall alternative). Final lunch in Quan Ba District with a view, then journey back for a free night at Mad Monkey.",
       ],
     },
     {
-      name: "Gili Trawangan",
-      daysLabel: "Days 7-9",
-      duration: "3 Days (Sep 12-14)",
-      image: giliTImg,
+      name: "Hoi An",
+      daysLabel: "Days 7-10",
+      duration: "4 Days (Jul 1-4)",
+      image: hoiAnImg,
       description:
-        "The legendary Gili T. Boat parties, snorkelling, beach volleyball, and a free day to explore.",
+        "Down south to magical Hoi An — cooking classes, river cruises, Ba Na Hills, and lantern-lit nights.",
       highlights: [
-        "Day 7 (12/09) — Early fast boat to Gili T. Mad Monkey Boat Party (2PM-6PM) + Unlimited BBQ & Drinks",
-        "Day 8 (13/09) — Monkey Sea Monkey Do snorkelling tour (10:30AM-4PM) + Beach Volleyball Tournament & Live DJ (3PM-7PM)",
-        "Day 9 (14/09) — Free day mid-trip to explore Gili T",
-      ],
-    },
-    {
-      name: "Kuta Lombok",
-      daysLabel: "Days 10-15",
-      duration: "6 Days (Sep 15-21)",
-      image: kutaLombokImg,
-      description:
-        "Head to Lombok for the grand finale — waterfalls, surf lessons, BBQ free-flows, and a chilled farewell.",
-      highlights: [
-        "Day 10 (15/09) — Short boat to Lombok mainland, shuttle to Mad Monkey Kuta Lombok",
-        "Day 11 (16/09) — Lombok Signature Waterfall Tour (10AM-5PM)",
-        "Day 12 (17/09) — Relax and explore Kuta",
-        "Day 13 (19/09) — Surf lesson (9AM-12PM)",
-        "Day 14 (20/09) — Surf lesson (9AM-12PM) + BBQ & Free Flow",
-        "Day 15 (21/09) — Recovery breakfast + 30-min shuttle to Lombok Airport (LOP)",
+        "Day 7 (01/07) — Sun: Hanoi → Hoi An. Rest up (trust needed).",
+        "Day 8 (02/07) — Mon: Cooking Class & Bamboo Boats (8:30AM-1PM) + Sunset River Cruise (4PM-6:30PM).",
+        "Day 9 (03/07) — Tue: Group tour up Ba Na Hills for panoramic views (7:45AM-5PM). Free evening to wander Hoi An's lantern-lit streets.",
+        "Day 10 (04/07) — Wed: Farewell to the team. Exchange photos and tag us in them all!",
       ],
     },
   ],
@@ -176,7 +159,7 @@ export const tripConfig: TripConfig = {
       items: [
         "Mixed or Female shared dorms",
         "Mad Monkey locations throughout",
-        "Island accommodation",
+        "Mountain & city accommodation",
       ],
     },
     {
@@ -184,32 +167,37 @@ export const tripConfig: TripConfig = {
       title: "Transport",
       items: [
         "All internal transport",
-        "Group vans between cities",
-        "Fast ferries to islands",
-        "Does NOT include airport arrival/departure",
+        "Hanoi → Ha Giang group ride",
+        "Ha Giang Loop motorbike & guides",
+        "Hanoi → Hoi An transfer",
+        "Does NOT include international flights",
       ],
     },
     {
       icon: "utensils",
       title: "Tours & Extras",
       items: [
-        "ATV Adventure",
-        "Mad Monkey Boat Party",
-        "Manta Ray expedition",
+        "Ha Giang Loop with local guides",
+        "Khau Làn Waterfall trek & swim",
+        "Ma Pi Leng Pass & Skywalk",
+        "Cooking Class & Bamboo Boats in Hoi An",
+        "Sunset River Cruise in Hoi An",
+        "Ba Na Hills group tour",
+        "1hr unlimited beer on loop evenings",
         "Group leader in every location",
         "WhatsApp support group",
       ],
     },
   ],
   notIncluded: [
-    { title: "International Flights", description: "Flights to and from Indonesia" },
+    { title: "International Flights", description: "Flights to and from Vietnam" },
     { title: "Personal Spend", description: "Meals, drinks, and optional activities not listed in the itinerary" },
-    { title: "Visas", description: "Tourist Visa (approx. $30–$35)" },
+    { title: "Visas", description: "Vietnam tourist e-Visa (approx. $25)" },
     { title: "Travel Insurance", description: "Mandatory for all travellers" },
   ],
   whoItsFor: [
     "You're an 18–30 year old social traveller looking for the trip of a lifetime.",
-    "You love beach days, party nights, and island hopping.",
+    "You love mountain adventures, lantern-lit nights, and cultural immersion.",
     "You want the logistics handled so you can just show up and have fun.",
     "You're a solo traveller who wants instant community and core memories.",
     "You're a first-time backpacker looking for an easy way in.",
@@ -218,7 +206,7 @@ export const tripConfig: TripConfig = {
     {
       title: "Pay Your Deposit",
       description:
-        "Pay your £233.10 deposit via the booking link by 09/08/2026.",
+        "Pay your £70 deposit via the link below by 28/05.",
     },
     {
       title: "Join the Crew",
@@ -228,13 +216,14 @@ export const tripConfig: TripConfig = {
     {
       title: 'Wait for the "GO"',
       description:
-        "As soon as we hit 12 confirmed travellers (by 09/08), we'll blast the group chat to confirm the takeover is ON.",
+        "This trip requires 12 confirmed travellers by 28/05. As soon as we hit the minimum, we'll confirm the takeover is ON.",
     },
     {
       title: "Pay Your Instalments",
       rows: [
-        { label: "Instalment 1", amount: "£233.10", due: "23/08/2026" },
-        { label: "Instalment 2", amount: "£233.10", due: "30/08/2026" },
+        { label: "Deposit", amount: "£70", due: "28/05" },
+        { label: "Instalment 1", amount: "£350", due: "04/06" },
+        { label: "Instalment 2", amount: "£280", due: "18/06" },
       ],
       footer: "Total trip cost: £700",
     },
@@ -251,9 +240,14 @@ export const tripConfig: TripConfig = {
         "No. This trip is beginner-friendly. All transport, accommodation, and activities are organised for you — you just need to show up ready for adventure.",
     },
     {
+      question: "Do I need to know how to ride a motorbike for the Ha Giang Loop?",
+      answer:
+        "Not at all. You can ride pillion with one of our experienced local easy-riders, who will handle the bike while you take in the views. If you do want to ride yourself and have a valid licence, that's an option too.",
+    },
+    {
       question: "What kind of luggage should I bring?",
       answer:
-        "We recommend a backpack or medium-sized suitcase (hostels and boats are easier to navigate without oversized luggage).",
+        "We recommend a backpack or medium-sized duffel — easier to manage on the loop and on transfers between cities.",
     },
     {
       question: "Can I request to share a room with someone?",
@@ -268,12 +262,7 @@ export const tripConfig: TripConfig = {
     {
       question: "Is this a party trip?",
       answer:
-        "This is a social, high-energy trip with boat parties and nightlife built in — but it also includes beach days, adventure activities, and downtime. You can participate as much or as little as you like.",
-    },
-    {
-      question: "Can I skip activities if I want to relax?",
-      answer:
-        "Absolutely. While group activities are included, you're free to opt out of anything and enjoy free time instead.",
+        "It's a high-energy social trip with unlimited beer hours and great nightlife — but Vietnam is also about culture, mountains, food, and downtime. Join in as much or as little as you like.",
     },
     {
       question: "What if I get sick or injured?",
@@ -283,17 +272,17 @@ export const tripConfig: TripConfig = {
     {
       question: "Will there be WiFi?",
       answer:
-        "Yes — all Mad Monkey locations have WiFi, though speeds may vary depending on island location.",
+        "Yes — all Mad Monkey locations have WiFi, though speeds may vary in remote mountain areas of Ha Giang.",
     },
     {
       question: "Is there a payment plan available?",
       answer:
-        "Yes. You pay a £233.10 deposit by 09/08/2026, followed by two instalments of £233.10 — due 23/08/2026 and 30/08/2026. Total cost is £700. Missed payments may result in your spot being released.",
+        "Yes. £70 deposit by 28/05, then £350 by 04/06 and £280 by 18/06. Total cost is £700. Missed payments may result in your spot being released.",
     },
     {
       question: "Is there a minimum number of travellers required?",
       answer:
-        "All trips require a minimum of 12 confirmed travellers to be officially confirmed. If this minimum is not met by the deposit deadline, the trip will be cancelled and all payments will be fully refunded.",
+        "Yes — 12 confirmed travellers by 28/05. If this minimum isn't met, the trip will be cancelled and all payments will be fully refunded.",
     },
     {
       question: "What is the cancellation policy?",
@@ -302,20 +291,11 @@ export const tripConfig: TripConfig = {
     },
   ],
   vibeGallery: [
-    {
-      image: vibeBoatpartyImg,
-      alt: "Sunset boat party in Indonesia",
-    },
-    {
-      image: vibeMantarayImg,
-      alt: "Snorkeling with manta rays",
-    },
-    {
-      image: vibeAtvImg,
-      alt: "ATV adventure through Bali rice terraces",
-    },
+    { image: vibeMotorbikeImg, alt: "Riding the Ha Giang Loop in Vietnam" },
+    { image: vibeCookingImg, alt: "Vietnamese cooking class in Hoi An" },
+    { image: vibeBanaHillsImg, alt: "Ba Na Hills Golden Bridge" },
   ],
   footer: {
-    copyright: `Powered by Mad Monkey`,
+    copyright: "Powered by Mad Monkey",
   },
 };

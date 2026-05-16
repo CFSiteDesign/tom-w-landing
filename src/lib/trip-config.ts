@@ -94,7 +94,7 @@ export const tripConfig: TripConfig = {
     locationLabel: "across Vietnam",
     heroImage: heroImg,
   },
-  stripeBookingUrl: "https://buy.stripe.com/00w6oGgqT4be3TW0CSe7s47",
+  stripeBookingUrl: "https://buy.stripe.com/6oUbJ02A34beduwclAe7t1Y",
   spots: {
     total: 12,
     remainingText: "ONLY 12 SPOTS LEFT!",

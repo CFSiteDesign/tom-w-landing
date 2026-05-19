@@ -101,11 +101,11 @@ export const tripConfig: TripConfig = {
   },
   pricing: {
     currency: "£",
-    total: 700,
-    deposit: 70,
+    total: 699,
+    deposit: 233,
     instalments: [
-      { amount: 350, due: "04/06" },
-      { amount: 280, due: "18/06" },
+      { amount: 233, due: "04/06" },
+      { amount: 233, due: "18/06" },
     ],
     depositDeadline: "28/05",
     minTravellers: 12,
@@ -206,7 +206,7 @@ export const tripConfig: TripConfig = {
     {
       title: "Pay Your Deposit",
       description:
-        "Pay your £70 deposit via the link below by 28/05.",
+        "Pay your £233 deposit via the link below by 28/05.",
     },
     {
       title: "Join the Crew",
@@ -221,11 +221,11 @@ export const tripConfig: TripConfig = {
     {
       title: "Pay Your Instalments",
       rows: [
-        { label: "Deposit", amount: "£70", due: "28/05" },
-        { label: "Instalment 1", amount: "£350", due: "04/06" },
-        { label: "Instalment 2", amount: "£280", due: "18/06" },
+        { label: "Deposit", amount: "£233", due: "28/05" },
+        { label: "Instalment 1", amount: "£233", due: "04/06" },
+        { label: "Instalment 2", amount: "£233", due: "18/06" },
       ],
-      footer: "Total trip cost: £700",
+      footer: "Total trip cost: £699",
     },
     {
       title: "Book Your Flights",
@@ -277,7 +277,7 @@ export const tripConfig: TripConfig = {
     {
       question: "Is there a payment plan available?",
       answer:
-        "Yes. £70 deposit by 28/05, then £350 by 04/06 and £280 by 18/06. Total cost is £700. Missed payments may result in your spot being released.",
+        "Yes. £233 deposit by 28/05, then £233 by 04/06 and £233 by 18/06. Total cost is £699. Missed payments may result in your spot being released.",
     },
     {
       question: "Is there a minimum number of travellers required?",
